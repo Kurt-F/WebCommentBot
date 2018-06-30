@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+</head>
+<body>
+<p>This is a pure HTML page with an example comment form.</p>
+<form action="http://localhost:8123/sites/1/" method="post">
+    <label for="name">Name: </label>
+    <input name="name" type="text" />
+    <br>
+    <label for="contact">Contact Information:</label>
+    <input title="contact" type="text" />
+    <br>
+    <!-- TODO: List all topics from django view -->
+    <label for="topic">Topic:</label>
+    <input name="topic" type="text" />
+    <br>
+    <label for="message">Message:</label>
+    <textarea name="message"></textarea>
+    <br><br>
+    <input type="submit" value="Send Message">
+</form>
+
+</body>
+</html>

@@ -19,5 +19,5 @@ from botinterface import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('sites', include('botinterface.urls'))
+    path('sites/', include('botinterface.urls'))
 ]
