@@ -5,8 +5,6 @@ from django.core.exceptions import ObjectDoesNotExist
 from json import dumps
 from .tokens import BOT_KEY
 
-# Set up the base URL for making requests to telegram
-base_URL = "" + BOT_KEY
 # Handles messages sent from websites
 @csrf_exempt
 def comments(request, site):
