@@ -3,8 +3,10 @@ from django.views.decorators.csrf import csrf_exempt
 from botinterface.models import UserSite
 from django.core.exceptions import ObjectDoesNotExist
 from json import dumps
-from .messagehandling import *
+from .tokens import BOT_KEY
 
+# Set up the base URL for making requests to telegram
+base_URL = "" + BOT_KEY
 # Handles messages sent from websites
 @csrf_exempt
 def comments(request, site):
@@ -32,6 +34,3 @@ def messages(request):
     # If not a "configuration" message, send back an error.
     pass
 
-
-def test(request):
-    return HttpResponse("<b>test</b>")
